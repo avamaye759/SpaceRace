@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SpaceRace
@@ -156,10 +152,10 @@ namespace SpaceRace
             ranValue = ranGen.Next(1, 101);
 
             //generate new asteroid if it is time
-            if (ranValue < 10)
+            if (ranValue < 30)
             {
                 asteroids.Add(new Rectangle(600, ranGen.Next(0, 401), astWidth, astHeight));
-                astSpeed.Add(-7);
+                astSpeed.Add(ranGen.Next(-7, -3));
             }
             
             //check for collision between any asteroid and players
@@ -245,8 +241,8 @@ namespace SpaceRace
             else if (gameState == "run")
             {
                 //draw players
-                e.Graphics.FillRectangle(p1Brush, p1);
-                e.Graphics.FillRectangle(p2Brush, p2);
+                e.Graphics.FillEllipse(p1Brush, p1);
+                e.Graphics.FillEllipse(p2Brush, p2);
 
                 //draw asteroids
                 for (int i = 0; i < asteroids.Count(); i++)

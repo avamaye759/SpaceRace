@@ -45,11 +45,11 @@
             // titleLabel
             // 
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.titleLabel.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(146, 119);
+            this.titleLabel.Font = new System.Drawing.Font("Bauhaus 93", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.titleLabel.Location = new System.Drawing.Point(79, 106);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(308, 23);
+            this.titleLabel.Size = new System.Drawing.Size(442, 51);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "titleLabel";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
